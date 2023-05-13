@@ -8,15 +8,15 @@
 <template>
   <div class="goods" id="goods" name="goods">
     <!-- 面包屑 -->
-    <div class="breadcrumb">
-      <el-breadcrumb separator-class="el-icon-arrow-right">
-        <el-breadcrumb-item to="/">首页</el-breadcrumb-item>
-        <el-breadcrumb-item>秒杀</el-breadcrumb-item>
-        <!-- <el-breadcrumb-item v-if="search">搜索</el-breadcrumb-item>
-        <el-breadcrumb-item v-else>分类</el-breadcrumb-item> -->
-        <!-- <el-breadcrumb-item v-if="search">{{search}}</el-breadcrumb-item> -->
-      </el-breadcrumb>
-    </div>
+<!--    <div class="breadcrumb">-->
+<!--      <el-breadcrumb separator-class="el-icon-arrow-right">-->
+<!--        <el-breadcrumb-item to="/">首页</el-breadcrumb-item>-->
+<!--        <el-breadcrumb-item>秒杀</el-breadcrumb-item>-->
+<!--        &lt;!&ndash; <el-breadcrumb-item v-if="search">搜索</el-breadcrumb-item>-->
+<!--        <el-breadcrumb-item v-else>分类</el-breadcrumb-item> &ndash;&gt;-->
+<!--        &lt;!&ndash; <el-breadcrumb-item v-if="search">{{search}}</el-breadcrumb-item> &ndash;&gt;-->
+<!--      </el-breadcrumb>-->
+<!--    </div>-->
     <!-- 面包屑END -->
 
     <!-- 分类标签 -->

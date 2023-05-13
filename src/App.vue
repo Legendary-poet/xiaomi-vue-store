@@ -64,8 +64,8 @@
             </router-link>
           </div>
           <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/goods">全部商品</el-menu-item>
-          <el-menu-item index="/seckill">秒杀</el-menu-item>
+          <el-menu-item index="/goods">农产品列表</el-menu-item>
+          <el-menu-item index="/seckill">农产品秒杀(HOT)</el-menu-item>
           <!-- <el-menu-item index="/about">关于我们</el-menu-item> -->
 
           <div class="so">

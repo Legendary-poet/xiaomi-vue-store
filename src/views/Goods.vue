@@ -8,21 +8,21 @@
 <template>
   <div class="goods" id="goods" name="goods">
     <!-- 面包屑 -->
-    <div class="breadcrumb">
-      <el-breadcrumb separator-class="el-icon-arrow-right">
-<!--        <el-breadcrumb-item to="/">首页</el-breadcrumb-item>-->
-<!--        <el-breadcrumb-item>全部商品</el-breadcrumb-item>-->
-<!--        <el-breadcrumb-item v-if="search">搜索</el-breadcrumb-item>-->
-<!--        <el-breadcrumb-item v-else>分类</el-breadcrumb-item>-->
-<!--        <el-breadcrumb-item v-if="search">{{search}}</el-breadcrumb-item>-->
-      </el-breadcrumb>
-    </div>
+<!--    <div class="breadcrumb">-->
+<!--      <el-breadcrumb separator-class="el-icon-arrow-right">-->
+<!--&lt;!&ndash;        <el-breadcrumb-item to="/">首页</el-breadcrumb-item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <el-breadcrumb-item>全部商品</el-breadcrumb-item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <el-breadcrumb-item v-if="search">搜索</el-breadcrumb-item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <el-breadcrumb-item v-else>分类</el-breadcrumb-item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <el-breadcrumb-item v-if="search">{{search}}</el-breadcrumb-item>&ndash;&gt;-->
+<!--      </el-breadcrumb>-->
+<!--    </div>-->
     <!-- 面包屑END -->
 
     <!-- 分类标签 -->
     <div class="nav">
       <div class="product-nav">
-        <div class="title">分类</div>
+        <div class="title">精选分类</div>
         <el-tabs v-model="activeName" type="card">
           <el-tab-pane
             v-for="item in categoryList"
@@ -267,7 +267,7 @@ export default {
   margin: 0 auto;
 }
 .nav .product-nav .title {
-  width: 50px;
+  width: 100px;
   font-size: 16px;
   font-weight: 700;
   float: left;
