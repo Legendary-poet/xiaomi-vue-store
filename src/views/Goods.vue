@@ -10,11 +10,11 @@
     <!-- 面包屑 -->
     <div class="breadcrumb">
       <el-breadcrumb separator-class="el-icon-arrow-right">
-        <el-breadcrumb-item to="/">首页</el-breadcrumb-item>
-        <el-breadcrumb-item>全部商品</el-breadcrumb-item>
-        <el-breadcrumb-item v-if="search">搜索</el-breadcrumb-item>
-        <el-breadcrumb-item v-else>分类</el-breadcrumb-item>
-        <el-breadcrumb-item v-if="search">{{search}}</el-breadcrumb-item>
+<!--        <el-breadcrumb-item to="/">首页</el-breadcrumb-item>-->
+<!--        <el-breadcrumb-item>全部商品</el-breadcrumb-item>-->
+<!--        <el-breadcrumb-item v-if="search">搜索</el-breadcrumb-item>-->
+<!--        <el-breadcrumb-item v-else>分类</el-breadcrumb-item>-->
+<!--        <el-breadcrumb-item v-if="search">{{search}}</el-breadcrumb-item>-->
       </el-breadcrumb>
     </div>
     <!-- 面包屑END -->

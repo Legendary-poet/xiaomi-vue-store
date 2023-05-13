@@ -12,6 +12,22 @@
       <div class="topbar">
         <div class="nav">
           <ul>
+
+            <li>
+              <router-link to="/order">我的订单</router-link>
+            </li>
+            <li>
+              <router-link to="/collect">我的收藏</router-link>
+            </li>
+            <li :class="getNum > 0 ? 'shopCart-full' : 'shopCart'">
+              <router-link to="/shoppingCart">
+                <i class="el-icon-shopping-cart-full"></i> 购物车
+                <span class="num">({{getNum}})</span>
+              </router-link>
+            </li>
+          </ul>
+          <!-- 登录和注册链接 -->
+          <ul class="auth-links">
             <li v-if="!this.$store.getters.getUser">
               <el-button type="text" @click="login">登录</el-button>
               <span class="sep">|</span>
@@ -27,18 +43,6 @@
                 </div>
                 <el-button type="text" slot="reference">{{this.$store.getters.getUser.username}}</el-button>
               </el-popover>
-            </li>
-            <li>
-              <router-link to="/order">我的订单</router-link>
-            </li>
-            <li>
-              <router-link to="/collect">我的收藏</router-link>
-            </li>
-            <li :class="getNum > 0 ? 'shopCart-full' : 'shopCart'">
-              <router-link to="/shoppingCart">
-                <i class="el-icon-shopping-cart-full"></i> 购物车
-                <span class="num">({{getNum}})</span>
-              </router-link>
             </li>
           </ul>
         </div>
@@ -56,7 +60,7 @@
         >
           <div class="logo">
             <router-link to="/">
-              <img src="./assets/imgs/logo.png" alt />
+              <img src="./assets/imgs/logo.png" alt style="width: 300px;"/>
             </router-link>
           </div>
           <el-menu-item index="/">首页</el-menu-item>
@@ -98,11 +102,11 @@
               </p>
             </div>
           </div>
-          <div class="github">
-            <a href="https://github.com/ZeroWdd" target="_blank">
-              <div class="github-but"></div>
-            </a>
-          </div>
+<!--          <div class="github">-->
+<!--            <a href="https://github.com/ZeroWdd" target="_blank">-->
+<!--              <div class="github-but"></div>-->
+<!--            </a>-->
+<!--          </div>-->
           <div class="mod_help">
             <p>
               <router-link to="/">首页</router-link>
@@ -111,7 +115,7 @@
               <span>|</span>
               <router-link to="/seckill">秒杀</router-link>
               <span>|</span>
-              <!-- <router-link to="/about">关于我们</router-link> -->
+               <router-link to="/about">关于我们</router-link>
             </p>
             <p class="coty">商城版权所有 &copy; 2012-2021</p>
           </div>
@@ -156,18 +160,6 @@ export default {
       this.setUser(user);
     }
 
-    // window.setTimeout(() => {
-    //   this.$message({
-    //     duration: 0,
-    //     showClose: true,
-    //     message: `
-    //     <p>如果觉得这个项目还不错，</p>
-    //     <p style="padding:10px 0">您可以给项目源代码仓库点Star支持一下，谢谢！</p>
-    //     <p><a href="https://github.com/hai-27/vue-store" target="_blank">Github传送门</a></p>`,
-    //     dangerouslyUseHTMLString: true,
-    //     type: "success"
-    //   });
-    // }, 1000 * 60);
   },
   computed: {
     ...mapGetters(["getUser", "getNum"])
@@ -270,7 +262,7 @@ a:hover {
 /* 顶部导航栏CSS */
 .topbar {
   height: 40px;
-  background-color: #3d3d3d;
+  background-color: #98d59a;
   margin-bottom: 20px;
 }
 .topbar .nav {
@@ -278,37 +270,37 @@ a:hover {
   margin: 0 auto;
 }
 .topbar .nav ul {
-  float: right;
+  float: left;
 }
 .topbar .nav li {
-  float: left;
+  float: right;
   height: 40px;
-  color: #b0b0b0;
+  color: #3b2d2d;
   font-size: 14px;
   text-align: center;
   line-height: 40px;
   margin-left: 20px;
 }
 .topbar .nav .sep {
-  color: #b0b0b0;
+  color: #3b2d2d;
   font-size: 12px;
   margin: 0 5px;
 }
 .topbar .nav li .el-button {
-  color: #b0b0b0;
+  color: #3b2d2d;
 }
 .topbar .nav .el-button:hover {
   color: #fff;
 }
 .topbar .nav li a {
-  color: #b0b0b0;
+  color: #3b2d2d;
 }
 .topbar .nav a:hover {
   color: #fff;
 }
 .topbar .nav .shopCart {
   width: 120px;
-  background: #424242;
+  background: #dee46f;
 }
 .topbar .nav .shopCart:hover {
   background: #fff;
@@ -322,6 +314,9 @@ a:hover {
 }
 .topbar .nav .shopCart-full a {
   color: white;
+}
+.topbar .nav .auth-links {
+  float: right;
 }
 /* 顶部导航栏CSS END */
 

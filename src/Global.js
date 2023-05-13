@@ -6,8 +6,9 @@
  * @LastEditTime: 2020-03-05 01:41:50
  */
 exports.install = function (Vue) {
-  Vue.prototype.$target = "http://47.115.85.237:3000/"; // 线上图片地址
-  
+  // Vue.prototype.$target = "https://biyesheji-1313468346.cos.ap-beijing.myqcloud.com/"; // 线上图片地址
+  Vue.prototype.$target = ""; // 线上图片地址
+
   // 封装提示成功的弹出框
   Vue.prototype.notifySucceed = function (msg) {
     this.$notify({
