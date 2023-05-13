@@ -14,10 +14,10 @@
           <ul>
 
             <li>
-              <router-link to="/order">我的订单</router-link>
+              <router-link to="/order">订单</router-link>
             </li>
             <li>
-              <router-link to="/collect">我的收藏</router-link>
+              <router-link to="/collect">喜欢</router-link>
             </li>
             <li :class="getNum > 0 ? 'shopCart-full' : 'shopCart'">
               <router-link to="/shoppingCart">
@@ -30,11 +30,11 @@
           <ul class="auth-links">
             <li v-if="!this.$store.getters.getUser">
               <el-button type="text" @click="login">登录</el-button>
-              <span class="sep">|</span>
+              <span class="sep">OR</span>
               <el-button type="text" @click="register = true">注册</el-button>
             </li>
             <li v-else>
-              欢迎
+              Hello
               <el-popover placement="top" width="180" v-model="visible">
                 <p>确定退出登录吗？</p>
                 <div style="text-align: right; margin: 10px 0 0">
@@ -262,7 +262,7 @@ a:hover {
 /* 顶部导航栏CSS */
 .topbar {
   height: 40px;
-  background-color: #98d59a;
+  background-color: #fff;
   margin-bottom: 20px;
 }
 .topbar .nav {
@@ -290,13 +290,13 @@ a:hover {
   color: #3b2d2d;
 }
 .topbar .nav .el-button:hover {
-  color: #fff;
+  color: #ccb340;
 }
 .topbar .nav li a {
   color: #3b2d2d;
 }
 .topbar .nav a:hover {
-  color: #fff;
+  color: #ccb340;
 }
 .topbar .nav .shopCart {
   width: 120px;
@@ -333,7 +333,7 @@ a:hover {
 }
 .el-header .so {
   margin-top: 10px;
-  width: 300px;
+  width: 600px;
   float: right;
   color: #9dffb5;
 }
@@ -375,7 +375,7 @@ a:hover {
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  background: url("./assets/imgs/github.png") no-repeat;
+
 }
 .footer .mod_help {
   text-align: center;

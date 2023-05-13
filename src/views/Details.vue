@@ -14,10 +14,7 @@
         <div class="list">
           <ul>
             <li>
-              <router-link to>概述</router-link>
-            </li>
-            <li>
-              <router-link to>参数</router-link>
+              <router-link to>详细信息</router-link>
             </li>
             <li>
               <router-link to>用户评价</router-link>
@@ -51,7 +48,7 @@
       <div class="content">
         <h1 class="name">{{productDetails.productName}}</h1>
         <p class="intro">{{productDetails.productIntro}}</p>
-        <p class="store">小米自营</p>
+        <p class="store">新鲜 优质</p>
         <div class="price">
           <span>{{productDetails.productSellingPrice}}元</span>
           <span
@@ -76,22 +73,22 @@
           <el-button class="like" @click="addCollect">喜欢</el-button>
         </div>
         <!-- 内容区底部按钮END -->
-        <div class="pro-policy">
-          <ul>
-            <li>
-              <i class="el-icon-circle-check"></i> 小米自营
-            </li>
-            <li>
-              <i class="el-icon-circle-check"></i> 小米发货
-            </li>
-            <li>
-              <i class="el-icon-circle-check"></i> 7天无理由退货
-            </li>
-            <li>
-              <i class="el-icon-circle-check"></i> 7天价格保护
-            </li>
-          </ul>
-        </div>
+<!--        <div class="pro-policy">-->
+<!--          <ul>-->
+<!--            <li>-->
+<!--              <i class="el-icon-circle-check"></i> 小米自营-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <i class="el-icon-circle-check"></i> 小米发货-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <i class="el-icon-circle-check"></i> 7天无理由退货-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <i class="el-icon-circle-check"></i> 7天价格保护-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
       </div>
       <!-- 右侧内容区END -->
     </div>

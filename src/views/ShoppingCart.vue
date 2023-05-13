@@ -13,9 +13,9 @@
       <div class="cart-header-content">
         <p>
           <i class="el-icon-shopping-cart-full" style="color:#ff6700; font-weight: 600;"></i>
-          我的购物车
+          购物车
         </p>
-        <span>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</span>
+        <span>您要买的东西都在下面</span>
       </div>
     </div>
     <!-- 购物车头部END -->
@@ -110,7 +110,7 @@
     <!-- 购物车为空的时候显示的内容 -->
     <div v-else class="cart-empty">
       <div class="empty">
-        <h2>您的购物车还是空的！</h2>
+        <h2>买东西了吗？</h2>
         <p>快去购物吧！</p>
       </div>
     </div>
