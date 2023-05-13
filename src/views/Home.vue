@@ -22,16 +22,16 @@
         <!-- 手机商品展示区域 -->
         <div class="phone">
           <div class="box-hd">
-            <div class="title">手机特卖</div>
+            <div class="title">热销农产品</div>
           </div>
           <div class="box-bd">
-            <div class="promo-list">
-              <router-link to>
-                <img :src="$target +'public/imgs/phone/phone.png'" />
-              </router-link>
-            </div>
             <div class="list">
               <MyList :list="phoneList" :isMore="true"></MyList>
+            </div>
+            <div class="promo-list">
+              <router-link to>
+                <img :src="$target +'https://biyesheji-1313468346.cos.ap-beijing.myqcloud.com/product/carousel/wallhaven-1pjo89_234x615.png'" />
+              </router-link>
             </div>
           </div>
         </div>
@@ -40,12 +40,12 @@
         <!-- 电视商品展示区域 -->
         <div class="phone">
           <div class="box-hd">
-            <div class="title">电视影音</div>
+            <div class="title">最便宜</div>
           </div>
           <div class="box-bd">
             <div class="promo-list">
               <router-link to>
-                <img :src="$target +'public/imgs/phone/phone.png'" />
+                <img :src="$target +'https://biyesheji-1313468346.cos.ap-beijing.myqcloud.com/product/carousel/wallhaven-45d7d9_234x615.png'" />
               </router-link>
             </div>
             <div class="list">
@@ -58,28 +58,23 @@
         <!-- 配件商品展示区域 -->
         <div class="accessory" id="promo-menu">
           <div class="box-hd">
-            <div class="title">热门商品</div>
+            <div class="title">综合推荐</div>
             <div class="more" id="more">
-              <MyMenu :val="3" @fromChild="getChildMsg2">
-                <span slot="1">热门</span>
-                <span slot="2">保护套</span>
-                <span slot="3">充电器</span>
-              </MyMenu>
+<!--              <MyMenu :val="3" @fromChild="getChildMsg2">-->
+<!--                <span slot="1">热门</span>-->
+<!--                <span slot="2">保护套</span>-->
+<!--                <span slot="3">充电器</span>-->
+<!--              </MyMenu>-->
             </div>
           </div>
           <div class="box-bd">
-            <div class="promo-list">
-              <ul>
-                <li>
-                  <img :src="$target +'public/imgs/accessory/accessory-promo1.png'" alt />
-                </li>
-                <li>
-                  <img :src="$target +'public/imgs/accessory/accessory-promo2.png'" alt />
-                </li>
-              </ul>
-            </div>
             <div class="list">
               <MyList :list="accessoryList" :isMore="true"></MyList>
+            </div>
+            <div class="promo-list">
+              <router-link to>
+                <img :src="$target +'https://biyesheji-1313468346.cos.ap-beijing.myqcloud.com/product/carousel/wallhaven-o5921p_234x615.png'" />
+              </router-link>
             </div>
           </div>
         </div>

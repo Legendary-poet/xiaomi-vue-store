@@ -19,7 +19,7 @@
 /* 轮播图CSS */
 .block {
   margin: 0 auto;
-  max-width: 1225px;
+  max-width: 100%;
 }
 
 .el-carousel__item:nth-child(2n) {

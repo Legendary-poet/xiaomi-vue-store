@@ -69,7 +69,7 @@
           <!-- <el-menu-item index="/about">关于我们</el-menu-item> -->
 
           <div class="so">
-            <el-input placeholder="请输入搜索内容" v-model="search">
+            <el-input placeholder="你要买什么农产品?" v-model="search">
               <el-button slot="append" icon="el-icon-search" @click="searchClick"></el-button>
             </el-input>
           </div>
@@ -96,9 +96,9 @@
           <div class="ng-promise-box">
             <div class="ng-promise">
               <p class="text">
-                <a class="icon1" href="javascript:;">7天无理由退换货</a>
-                <a class="icon2" href="javascript:;">满99元全场免邮</a>
-                <a class="icon3" style="margin-right: 0" href="javascript:;">100%品质保证</a>
+                <a class="icon1" href="javascript:;">新鲜农产品，品质有保证</a>
+                <a class="icon2" href="javascript:;">自然呵护，健康美味尽享</a>
+                <a class="icon3" style="margin-right: 0" href="javascript:;">选择我们，品尝农场的丰收</a>
               </p>
             </div>
           </div>
@@ -108,16 +108,16 @@
 <!--            </a>-->
 <!--          </div>-->
           <div class="mod_help">
-            <p>
-              <router-link to="/">首页</router-link>
-              <span>|</span>
-              <router-link to="/goods">全部商品</router-link>
-              <span>|</span>
-              <router-link to="/seckill">秒杀</router-link>
-              <span>|</span>
-               <router-link to="/about">关于我们</router-link>
-            </p>
-            <p class="coty">商城版权所有 &copy; 2012-2021</p>
+<!--            <p>-->
+<!--              <router-link to="/">首页</router-link>-->
+<!--              <span>|</span>-->
+<!--              <router-link to="/goods">全部商品</router-link>-->
+<!--              <span>|</span>-->
+<!--              <router-link to="/seckill">秒杀</router-link>-->
+<!--              <span>|</span>-->
+<!--               <router-link to="/about">关于我们</router-link>-->
+<!--            </p>-->
+            <p class="coty">created by zjm</p>
           </div>
         </div>
       </el-footer>
@@ -335,6 +335,7 @@ a:hover {
   margin-top: 10px;
   width: 300px;
   float: right;
+  color: #9dffb5;
 }
 /* 顶栏容器CSS END */
 
