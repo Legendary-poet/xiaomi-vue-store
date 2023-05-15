@@ -211,6 +211,7 @@ export default {
           .then(res => {
             this.product = res.data.data;
             this.total = res.data.total;
+
           })
           .catch(err => {
             return Promise.reject(err);
@@ -225,8 +226,9 @@ export default {
           pageSize: this.pageSize
         })
         .then(res => {
-          this.product = res.data.Product;
+          this.product = res.data.data;
           this.total = res.data.total;
+
         })
         .catch(err => {
           return Promise.reject(err);

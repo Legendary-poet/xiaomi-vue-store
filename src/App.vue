@@ -96,9 +96,10 @@
           <div class="ng-promise-box">
             <div class="ng-promise">
               <p class="text">
-                <a class="icon1" href="javascript:;">新鲜农产品，品质有保证</a>
-                <a class="icon2" href="javascript:;">自然呵护，健康美味尽享</a>
-                <a class="icon3" style="margin-right: 0" href="javascript:;">选择我们，品尝农场的丰收</a>
+                <a class="icon1" href="javascript:;">农产品丰富，品质有保证</a>
+                <a class="icon2" href="javascript:;">3天直达，留住新鲜</a>
+                <a class="icon3" href="javascript:;">自然呵护，健康美味尽享</a>
+                <a class="icon4" style="margin-right: 0" href="javascript:;">天天秒杀，天天低价</a>
               </p>
             </div>
           </div>
@@ -107,6 +108,8 @@
 <!--              <div class="github-but"></div>-->
 <!--            </a>-->
 <!--          </div>-->
+
+
           <div class="mod_help">
 <!--            <p>-->
 <!--              <router-link to="/">首页</router-link>-->
@@ -343,7 +346,7 @@ a:hover {
 .footer {
   width: 100%;
   text-align: center;
-  background: #2f2f2f;
+  background: #eaeaea;
   padding-bottom: 20px;
 }
 .footer .ng-promise-box {
@@ -356,15 +359,28 @@ a:hover {
   line-height: 145px;
 }
 .footer .ng-promise-box .ng-promise p a {
-  color: #fff;
+  color: #181717;
   font-size: 20px;
-  margin-right: 210px;
+  margin-right: 110px;
   padding-left: 44px;
-  height: 40px;
+  height: 42px;
   display: inline-block;
   line-height: 40px;
   text-decoration: none;
-  background: url("./assets/imgs/us-icon.png") no-repeat left 0;
+  /*background: url("./assets/imgs/us-icon.png") no-repeat left 0;*/
+  background: url("./assets/imgs/img.png") no-repeat left 0;
+}
+
+.footer .ng-promise-box .ng-promise .text .icon2  {
+  background-position: 0 -43px
+}
+
+.footer .ng-promise-box .ng-promise .text .icon3 {
+  background-position: 0 -86px
+}
+
+.footer .ng-promise-box .ng-promise .text .icon4 {
+  background-position: 0 -129px
 }
 .footer .github {
   height: 50px;
